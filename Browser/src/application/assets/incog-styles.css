@@ -1,0 +1,144 @@
+.Toolbar {
+    -fx-background-color: #6528b5;
+    -fx-padding: 7 7 2 7;
+    -fx-text-fill: #ffffff;
+     -fx-text-background-color: #ffffff;
+}
+
+
+.ToolBarButton {
+    -fx-background-color: #6528b5;
+    -fx-background-radius: 5;
+    -fx-padding: 0 7;
+    -fx-text-fill: #ffffff;
+     -fx-text-background-color: #ffffff;
+}
+
+.ToolBarButton:hover {
+    -fx-background-color: #42197d;
+    -fx-text-fill: #ffffff;
+     -fx-text-background-color: #ffffff;
+}
+
+
+.Tab {
+    -fx-background-color: #42197d;
+    -fx-text-fill: #ffffff;
+     -fx-text-background-color: #ffffff;
+}
+
+.XButton {
+	-fx-background-radius: 2;
+	-fx-padding: 0 3;
+	-fx-text-fill: #ffffff;
+	 -fx-text-background-color: #ffffff;
+}
+
+.XButton:hover {
+    -fx-background-color: #42197d;
+    -fx-text-fill: #ffffff;
+     -fx-text-background-color: #ffffff;
+}
+
+.TabContainer {
+    -fx-background-color: #42197d;
+    -fx-padding: 6;
+    -fx-background-radius: 3;
+    -fx-text-fill: #ffffff;
+     -fx-text-background-color: #ffffff;
+    
+}
+
+.TabContainer.active-tab {
+	-fx-background-color: #6528b5;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 2, 0, 0, 0);
+    -fx-text-fill: #ffffff;
+     -fx-text-background-color: #ffffff;
+	
+}
+
+.TabContainer:hover {
+    -fx-background-color: #502a85;
+    -fx-text-fill: #ffffff;
+     -fx-text-background-color: #ffffff;
+}
+
+.TabBar {
+    -fx-background-color: #42197d;
+    -fx-padding: 5;
+    -fx-text-fill: #ffffff;
+     -fx-text-background-color: #ffffff;
+}
+
+.AddButton {
+    -fx-background-color: #42197d;
+	-fx-padding: 0 7;
+    -fx-background-radius: 3;
+    -fx-text-fill: #ffffff;
+     -fx-text-background-color: #ffffff;
+}
+
+.AddButton:hover {
+    -fx-background-color: #502a85;
+    -fx-text-fill: #ffffff;
+     -fx-text-background-color: #ffffff;
+}
+
+
+.BurgerMenu {
+	-fx-background-color: #6528b5;
+	-fx-padding: 2 5;
+	-fx-text-fill: #ffffff;
+	 -fx-text-background-color: #ffffff;
+}
+
+
+.ListItem {
+    -fx-background-color: #6528b5;
+    -fx-padding: 5 10;
+    -fx-background-radius: 3;
+    -fx-text-fill: #ffffff;
+     -fx-text-background-color: #ffffff;
+}
+
+.ListItem:hover {
+    -fx-background-color: #42197d;
+    -fx-text-fill: #ffffff;
+     -fx-text-background-color: #ffffff;
+}
+
+.ZoomButton {
+	-fx-background-radius: 2;
+	-fx-padding: 1 6;
+	-fx-background-color: #42197d;
+	-fx-text-fill: #ffffff;
+	 -fx-text-background-color: #ffffff;
+}
+
+.ZoomButton:hover {
+    -fx-background-color: #502a85;
+    -fx-text-fill: #ffffff;
+    -fx-text-background-color: #ffffff;
+}
+
+.BookmarkButton {
+    -fx-background-color: #6528b5;
+	-fx-padding: 4 6;
+    -fx-background-radius: 3;
+    -fx-text-fill: #ffffff;
+     -fx-text-background-color: #ffffff;
+}
+
+.BookmarkButton:hover {
+    -fx-background-color: #42197d;
+    -fx-text-fill: #ffffff;
+     -fx-text-background-color: #ffffff;
+}
+
+.BookmarkBar {
+    -fx-background-color: #6528b5;
+    -fx-padding: 2 5 5 5;
+    -fx-text-fill: #ffffff;
+     -fx-text-background-color: #ffffff;
+
+}

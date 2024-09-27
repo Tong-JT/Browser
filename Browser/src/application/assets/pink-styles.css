@@ -1,0 +1,104 @@
+.Toolbar {
+    -fx-background-color: #fceded;
+    -fx-padding: 7 7 2 7;
+}
+
+
+.ToolBarButton {
+    -fx-background-color: #fceded;
+    -fx-background-radius: 5;
+    -fx-padding: 0 7;
+}
+
+.ToolBarButton:hover {
+    -fx-background-color: #f7dada;
+}
+
+
+.Tab {
+    -fx-background-color: #f7dada;
+}
+
+.XButton {
+	-fx-background-radius: 2;
+	-fx-padding: 0 3;
+}
+
+.XButton:hover {
+    -fx-background-color: #f7dada;
+}
+
+.TabContainer {
+    -fx-background-color: #f7dada;
+    -fx-padding: 6;
+    -fx-background-radius: 3;
+    
+}
+
+.TabContainer.active-tab {
+	-fx-background-color: #fceded;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 2, 0, 0, 0);
+	
+}
+
+.TabContainer:hover {
+    -fx-background-color: #f5c9c9;
+}
+
+.TabBar {
+    -fx-background-color: #f7dada;
+    -fx-padding: 5;
+}
+
+.AddButton {
+    -fx-background-color: #f7dada;
+	-fx-padding: 0 7;
+    -fx-background-radius: 3;
+}
+
+.AddButton:hover {
+    -fx-background-color: #f5c9c9;
+}
+
+
+.BurgerMenu {
+	-fx-background-color: #fceded;
+	-fx-padding: 2 5;
+}
+
+
+.ListItem {
+    -fx-background-color: #fceded;
+    -fx-padding: 5 10;
+    -fx-background-radius: 3;
+}
+
+.ListItem:hover {
+    -fx-background-color: #f7dada;
+}
+
+.ZoomButton {
+	-fx-background-radius: 2;
+	-fx-padding: 1 6;
+	-fx-background-color: #f7dada;
+}
+
+.ZoomButton:hover {
+    -fx-background-color: #f5c9c9;
+}
+
+.BookmarkButton {
+    -fx-background-color: #fceded;
+	-fx-padding: 4 6;
+    -fx-background-radius: 3;
+}
+
+.BookmarkButton:hover {
+    -fx-background-color: #f7dada;
+}
+
+.BookmarkBar {
+    -fx-background-color: #fceded;
+    -fx-padding: 2 5 5 5;
+
+}
