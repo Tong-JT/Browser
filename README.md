@@ -20,3 +20,10 @@ A simple web browser built using JavaFX, designed to render web pages through We
 
 - Java Development Kit (JDK) 23
 - JavaFX SDK 18.0.2
+
+### History
+*Developed for a university assignment (Victoria University of Wellington - Master of Software Development)*
+
+- Created: 23rd September 2024
+- Completed: 26th September 2024
+
