@@ -8,6 +8,15 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Priority;
 
+/**
+ * Holds user input for link or search result. Launched with 'enter' key or launch button.
+ * Text is sent from within this class.
+ * See @LaunchButton
+ * Text is updated as users navigate WebViews
+ * See @BrowserBody
+ * Text may be loaded from history or bookmarks bar
+ * See @History, @Bookmarks
+ */
 public class TextBar extends HBox {
 
 	private HBox textFieldContainer;
@@ -45,6 +54,10 @@ public class TextBar extends HBox {
 		});
 	}
 	
+	/**
+	 * Sends text from the textfield to the Webview. Will convert to valid link
+	 * depending on user input.
+	 */
 	public void submitText() {
 		fieldText = textField.getText();
 		if (!fieldText.isEmpty()) {

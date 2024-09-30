@@ -10,6 +10,9 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.HBox;
 import javafx.scene.web.WebEngine;
 
+/**
+ * Allows user to select printers on their system or save document as a PDF.
+ */
 public class Print extends ListItem {
     
     public Print(TabBar tabBar, BrowserBody body, String string) {
@@ -25,7 +28,7 @@ public class Print extends ListItem {
                 if (proceed) {
                     WebEngine engine = body.currentWebView.getEngine();
                     engine.print(job);
-                    Alert alert = new Alert(Alert.AlertType.INFORMATION, "Printing initiated!", ButtonType.OK);
+                    Alert alert = new Alert(Alert.AlertType.NONE, "Printing initiated!", ButtonType.OK);
                     alert.showAndWait();
                     job.endJob();
                 }

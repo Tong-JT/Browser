@@ -2,6 +2,10 @@ package FavManagement;
 
 import javafx.scene.image.ImageView;
 
+/**
+ * A class storing information required to recall link and create visual container
+ * Stores link, title and favicon.
+ */
 public class BookmarkItem {
     
     private String link;

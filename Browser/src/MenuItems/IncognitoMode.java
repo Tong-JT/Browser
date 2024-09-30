@@ -5,6 +5,12 @@ import Components.TabBar;
 import application.BrowserScene;
 import application.Main;
 
+/**
+ * Button that instantiates a new BrowserScene, with the incognito Boolean marked true,
+ * which alters history storage and theme selection. If incognito is true, the 
+ * browser does not record browsing history and the theme cannot be altered.
+ * See @BrowserScene, See @Main
+ */
 public class IncognitoMode extends ListItem {
 	
 	BrowserScene scene;

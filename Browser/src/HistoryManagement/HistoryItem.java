@@ -5,6 +5,11 @@ import java.time.Instant;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 
+/**
+ * Stores information for individual history, including link, title and favicon link.
+ * See @History
+ * Returns time formatted for use in the history screen.
+ */
 public class HistoryItem {
     
     private Instant time;
@@ -39,6 +44,13 @@ public class HistoryItem {
         return title;
     }
 
+    /**
+     * If instant is under 1 minute from creation, 'just now' is returned.
+     * If instant is under 30 minutes from screated, '_ minutes ago' is returned.
+     * If instant is under 24 hours, the hours and minutes are returned.
+     * If instant is over 24 hours, the date is returned.
+     * @return String formatted time
+     */
     public String getFormattedTime() {
         Instant now = Instant.now();
         Duration duration = Duration.between(time, now);

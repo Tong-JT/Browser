@@ -11,6 +11,12 @@ import javafx.scene.layout.Region;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 
+/**
+ * The visual container representing the saved BookmarkItem. The container is a 
+ * label containing title text and favicon, storing a link, which is accessible when clicked
+ * Is added with addBookmark() in BookmarkBar
+ * See @BookmarkBar
+ */
 public class BookmarkButton extends HBox {
 
 	private TabBar tabBar;

@@ -10,6 +10,13 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.Priority;
 import javafx.scene.layout.VBox;
 
+/**
+ * Creates the side menu, which holds additional commands for the user to alter their
+ * browsing environment.
+ * See @BrowserBody See @ListItem
+ * SideMenu is created and made visible when burger menu is clicked
+ * See @BurgerMenu
+ */
 public class SideMenu extends VBox {
 	
 	VBox menu;

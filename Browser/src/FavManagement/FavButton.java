@@ -13,6 +13,13 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.web.WebEngine;
 
+/**
+ * FavButton that saves a BookmarkItem into the FavList. 
+ * See @BrowserBody for FavList.
+ * The fav button switches between two styles, filled and empty, depending on whether 
+ * the page navigated to is on the FavList or not.
+ * Is responsible for creating the BookmarkItem.
+ */
 public class FavButton extends IconButton {
 
 	private boolean selected = false;
@@ -29,6 +36,10 @@ public class FavButton extends IconButton {
 		button.getStyleClass().add("ToolBarButton");
 	}
 
+	/**
+	 * Button will create a BookmarkItem if link does not exist on the FavList.
+	 * If link already exists, it is removed.
+	 */
 	protected void setupEventListeners() {
 	    button.setOnMouseClicked(e -> {
 	        WebEngine engine = body.currentWebView.getEngine();
@@ -62,6 +73,12 @@ public class FavButton extends IconButton {
 	}
 
 
+	/**
+	 * Toggle the appearance of the button depending on the presence of the link on 
+	 * the WebView. To ensure that FavButton is always updated, a listener is present
+	 * on the BrowserBody to detect whether the current link is on the FavList
+	 * See @BrowserBody
+	 */
 	public void updateLabel() {
 		WebEngine engine = body.currentWebView.getEngine();
 		String currentLink = engine.getLocation();

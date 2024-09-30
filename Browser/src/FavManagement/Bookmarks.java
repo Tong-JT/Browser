@@ -19,6 +19,11 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
+/**
+ * SideMenu button that visually displays bookmarked items in a table, and allows users to delete bookmarks
+ * Bookmarks deleted within this TableView will also disappear from the BookmarkBar
+ * See @BookmarkBar
+ */
 public class Bookmarks extends ListItem {
 
 	private ArrayList<BookmarkItem> favList;
@@ -35,10 +40,13 @@ public class Bookmarks extends ListItem {
 		this.setOnMouseClicked(e -> {
 			favList = body.getFavList();
 			createSourcePopup();
-			System.out.println(body.getFavList());
 		});
 	}
 
+	/**
+	 * Creates TableView with column headers title and link. Allows users to doubleclick
+	 * to open link, and to delete individual links from bookmarks list.
+	 */
 	private void createSourcePopup() {
 		source = new Stage();
 		source.setTitle("Bookmarks");
@@ -64,8 +72,6 @@ public class Bookmarks extends ListItem {
 			tableView.getItems().addAll(favList);
 		}
 
-		
-		
 		tableView.setOnMouseClicked(event -> {
             if (event.getClickCount() == 2) {
                 BookmarkItem selectedItem = tableView.getSelectionModel().getSelectedItem();

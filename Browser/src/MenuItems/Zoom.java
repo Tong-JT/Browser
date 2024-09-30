@@ -12,6 +12,10 @@ import javafx.scene.layout.Priority;
 import javafx.scene.layout.Region;
 import javafx.scene.web.WebEngine;
 
+/**
+ * Allows user to adjust the size of attributes within WebView. Uses WebView's antive zoom
+ * methods
+ */
 public class Zoom extends ListItem {
 	
 	private HBox minusButton;

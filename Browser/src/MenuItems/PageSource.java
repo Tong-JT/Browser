@@ -1,6 +1,7 @@
 package MenuItems;
 
 import Components.BrowserBody;
+
 import Components.TabBar;
 import TabManagement.Tab;
 import javafx.scene.control.Alert;
@@ -21,6 +22,10 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
+/**
+ * Opens a window displaying the HTML of the current WebView. Contains a button that
+ * allows users to save HTML if they wish
+ */
 public class PageSource extends ListItem {
 	
 	private Stage source;

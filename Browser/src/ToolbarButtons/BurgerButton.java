@@ -4,12 +4,15 @@ import Components.BrowserBody;
 import Components.TabBar;
 import javafx.scene.layout.VBox;
 
+/**
+ * Toggles the presence of a side menu on the BrowserBody. The side menu contains 
+ * additional methods for the WebView.
+ * See @SideMenu, see @BrowserBody
+ */
 public class BurgerButton extends IconButton {
 	
     public BurgerButton(TabBar tabBar, BrowserBody body, String symbol) {
         super(tabBar, body, "\u2261");
-        
-
     }
     
     @Override

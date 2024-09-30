@@ -16,6 +16,9 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
+/**
+ * Saves HTML to file. Allows user to choose folder.
+ */
 public class SavePage extends ListItem {
 
     public SavePage(TabBar tabBar, BrowserBody body, String string) {

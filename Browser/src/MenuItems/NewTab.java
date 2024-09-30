@@ -6,6 +6,10 @@ import TabManagement.Tab;
 import javafx.scene.control.Label;
 import javafx.scene.layout.HBox;
 
+/**
+ * SideMenu button which allows user to add a new tab. Same function as AddButton.
+ * See @SideMenu
+ */
 public class NewTab extends ListItem {
     
     public NewTab(TabBar tabBar, BrowserBody body, String string) {

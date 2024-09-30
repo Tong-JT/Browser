@@ -10,6 +10,12 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 
+/**
+ * Button that instantiates a new default BrowserScene, with the incognito Boolean marked false,
+ * which alters history storage and theme selection. If incognito is false, the 
+ * browser does records browsing history and theme can be altered.
+ * See @BrowserScene, See @Main
+ */
 public class NewWindow extends ListItem {
 	
 	BrowserScene scene;

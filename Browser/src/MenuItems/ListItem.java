@@ -7,7 +7,11 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.Priority;
 import javafx.scene.layout.Region;
 
-public class ListItem extends HBox {
+/**
+ * Abstract class that represents a button on the SideMenu. Contains a string.
+ * See @SideMenu, see @BrowserBody
+ */
+public abstract class ListItem extends HBox {
     
     protected HBox button;
     protected BrowserBody body;

@@ -12,6 +12,10 @@ import javafx.scene.layout.Priority;
 import javafx.scene.layout.Region;
 import javafx.scene.web.WebEngine;
 
+/**
+ * Allows user to adjust the font size of the WebView. Uses native WebView font size 
+ * methods
+ */
 public class FontSize extends ListItem {
 	
 	private HBox minusButton;

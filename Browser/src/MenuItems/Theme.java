@@ -4,6 +4,11 @@ import Components.BrowserBody;
 import Components.TabBar;
 import application.BrowserScene;
 
+/**
+ * Toggles theme colour by triggering method within BrowserScene. Theme does not appear
+ * on the SideMenu if incognito mode is on
+ * See @BrowserScene
+ */
 public class Theme extends ListItem {
 	
 	BrowserScene scene;

@@ -18,13 +18,20 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
+/**
+ * Collates all items currently stored in history list (in BrowserBody)
+ * See @BrowserBody
+ * Prints information into tableview, which can be double clicked to open link in
+ * current tab. History is only recorded when the WebView loads completely. Trying to 
+ * view history before it is fully loaded may result in an inaccurate list.
+ * TableView also contains a button to clear entire list.
+ */
 public class History extends ListItem {
 	
 	private ArrayList<HistoryItem> historyList;
 	private Stage source;
 	private Toolbar toolBar;
 	
-    
     public History(TabBar tabBar, BrowserBody body, String string, Toolbar toolBar) {
     	super(tabBar,body,string);
     	this.toolBar = toolBar;
@@ -34,11 +41,14 @@ public class History extends ListItem {
     protected void setupEventListeners() {
     	this.setOnMouseClicked(e -> {
     		historyList = body.getHistoryList();
-    		System.out.println(historyList);
     		createSourcePopup();
         });
     }
     
+    /**
+     * Creates a popup menu which lists all history items. The columns are time, title
+     * and a link, which may be double-clicked to open the link in the active tab.
+     */
     private void createSourcePopup() {
         source = new Stage();
         source.setTitle("History");
@@ -67,6 +77,7 @@ public class History extends ListItem {
         historyList.sort(new HistoryComparator());
         tableView.getItems().addAll(historyList);
         
+        // Double click table row to extract link
         tableView.setOnMouseClicked(event -> {
             if (event.getClickCount() == 2) {
                 HistoryItem selectedItem = tableView.getSelectionModel().getSelectedItem();
@@ -81,6 +92,7 @@ public class History extends ListItem {
         HBox bottomBar = new HBox();
         Button clearHistory = new Button("Delete history");
         
+        // Button to clear all history in list
         clearHistory.setOnMouseClicked(event -> {
             body.clearHistoryList();
             tableView.getItems().clear();

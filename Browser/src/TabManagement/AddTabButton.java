@@ -6,6 +6,10 @@ import ToolbarButtons.IconButton;
 import javafx.scene.control.Label;
 import javafx.scene.layout.HBox;
 
+/**
+ * A plus button that creates a new tab when pressed
+ * See @Tab
+ */
 public class AddTabButton extends IconButton {
     
     public AddTabButton(TabBar tabBar, BrowserBody body, String symbol) {

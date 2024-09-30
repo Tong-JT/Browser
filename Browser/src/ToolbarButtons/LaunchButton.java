@@ -6,6 +6,10 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.HBox;
 
+/**
+ * Submits the text within the textfield
+ * See @Textbar
+ */
 public class LaunchButton extends IconButton {
 
 	TextBar textfield;

@@ -14,6 +14,12 @@ import javafx.scene.layout.Region;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 
+/**
+ * A tab is an HBox that both stores a Webview that is accessed in the BrowserBody and 
+ * a label that represents this WebView in the TabBar.
+ * See @TabBar
+ * Tab deleting and adding management is shared with TabBar.
+ */
 public class Tab extends HBox {
 
 	private HBox tabContainer;
@@ -32,6 +38,11 @@ public class Tab extends HBox {
 		getChildren().add(tabContainer);
 	}
 
+	/**
+	 * Visual tab box which appears in the TabBar. Clicking on the tab will set it 
+	 * as active, and make its WebView appear on the BrowserBody. An active tab has
+	 * different styling to make it stand out.
+	 */
 	private void createTab() {
 		
 		tabContainer = new HBox();
@@ -60,6 +71,11 @@ public class Tab extends HBox {
 		this.getStyleClass().add("Tab");
 	}
 
+	/**
+	 * Each tab has its own browser attached. A listener reads the link in the browser
+	 * and updates the title in the tab label
+	 * @return Webview for each tab
+	 */
 	private WebView createBrowser() {
 		WebView newBrowser = new WebView();
 		WebEngine webEngine = newBrowser.getEngine();
@@ -85,6 +101,10 @@ public class Tab extends HBox {
 	    }
 	}
 	
+	/**
+	 * Public method to allow external classes to toggle active
+	 * @param active Boolean for active state
+	 */
 	public void setActive(boolean active) {
         isActive = active;
         if (active) {
@@ -94,6 +114,10 @@ public class Tab extends HBox {
         }
     }
 
+	/**
+	 * Removes tab
+	 * @return
+	 */
 	private HBox createXButton() {
 	    HBox xButton = new HBox(new Label("\u2715"));
 	    xButton.getStyleClass().add("XButton");
