@@ -21,6 +21,20 @@ A simple web browser built using JavaFX, designed to render web pages through We
 - Java Development Kit (JDK) 23
 - JavaFX SDK 18.0.2
 
+### Installation
+
+Clone this repository
+```
+git clone https://github.com/Tong-JT/Browser.git
+```
+
+Import zip file via IDE
+
+Configure JavaFX, dependent libraries and build paths
+
+Locate 'Main.java' and click 'run' to initialise program
+
+
 ### History
 *Developed for a university assignment (Victoria University of Wellington - Master of Software Development)*
 
